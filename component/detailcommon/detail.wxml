@@ -1,0 +1,42 @@
+<!--component/detail.wxml-->
+<view class="wrapper-detail">
+  <!--goodsdetail start-->
+  <view class="detail-box">
+    <view class="banner">
+      <image src="{{childdata.url}}"></image>
+    </view>
+    <view class="text-box">
+      <view class="title">
+        <text class="name">{{childdata.title}}</text>
+        <text class="iconfont icon-shoucang"></text>
+      </view>
+      <text class="desc">{{childdata.desc}}</text>
+    </view>
+    <!--contact start-->
+    <view class="contact-box">
+      <slot></slot>
+    </view>
+    <!--contact end-->
+  </view>
+  <!--goodsdetail end-->
+  <!--moredetail start-->
+  <view class="more-detail">
+    <text class="more-title">更多细节</text>
+    <view class="more-desc">
+      <block wx:for="{{childdata.detail}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+  <!--moredetail end-->
+  <!--comments start-->
+  <view class="comments-box">
+    <text class="more-title">商品评论</text>
+    <view class="comment-desc">
+      <view class="comment-list">
+        <comment childcomment="{{commentcontent}}"></comment>
+      </view>
+    </view>
+  </view>
+  <!--comments end-->
+</view>

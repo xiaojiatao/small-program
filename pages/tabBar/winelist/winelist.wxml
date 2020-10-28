@@ -1,0 +1,14 @@
+<!--pages/winelist/winelist.wxml-->
+<view class="wrapper-winelist">
+  <view class="banner">
+    <image src="/img/ban-wine.jpg"></image>
+  </view>
+  <!--winelist start-->
+  <view class="wine-box">
+    <text class="title">美酒汇</text>
+    <!--wine component start-->
+    <winelist winelist="{{productList}}"></winelist>
+    <!--wine component end-->
+  </view>
+  <!--winelist end-->
+</view>

@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view id="app">
+  <button>增加</button>
+</view>

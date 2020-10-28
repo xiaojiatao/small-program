@@ -1,0 +1,76 @@
+/*hotel.wxss*/
+.hostlist{
+  padding-bottom:100rpx;
+}
+.hostlist .map{
+  width:100%;
+  height:488rpx;
+}
+.hostlist .map image{
+  width:100%;
+  height:100%;
+}
+.hostlist .list>text{
+  width:100%;
+  font-size:28rpx;
+  margin:50rpx 0 30rpx;
+  color:#5c5c5c;
+  display:block;
+  position:relative;
+  text-align:center;
+}
+.hostlist .list>text::before{
+  width:160rpx;
+  height:1rpx;
+  content: "";
+  background:#333;
+  position:absolute;
+  left:95rpx;
+  top:20rpx;
+  display:block;
+}
+.hostlist .list>text::after{
+  width:160rpx;
+  height:1rpx;
+  content: "";
+  background:#333;
+  position:absolute;
+  right:95rpx;
+  top:20rpx;
+  display:block;
+}
+.list-box{
+  display:flex;
+  padding:30rpx 0rpx 30rpx 0rpx;
+  border-bottom:solid 1px #e7e3e2;
+}
+.list-box .picture{
+  width:300rpx;
+  height:200rpx;
+  flex-shrink: 0;
+  margin-right:30rpx;
+}
+.list-box .text{
+  flex:1;
+}
+.list-box .text .title{
+  color:#333;
+  font-size:40rpx;
+  margin-bottom:10rpx;
+  display:block;
+}
+.list-box .text .desc{
+  color:#323232;
+  font-size:24rpx;
+}
+.list-box .text .desc>text{
+  display:block;
+  line-height:38rpx;
+}
+.list-box .picture image{
+  width:100%;
+  height:100%;
+}
+.list-dw{
+  padding:0 40rpx;
+}

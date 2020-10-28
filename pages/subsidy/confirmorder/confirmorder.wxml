@@ -1,0 +1,4 @@
+<!--pages/confirmorder/confirmorder.wxml-->
+<view class="wrapper-shopcar">
+确认订单
+</view>

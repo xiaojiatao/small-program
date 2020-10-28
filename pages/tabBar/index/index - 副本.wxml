@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="/img/ban.jpg"></image>
+  </view>
+  <view class="sale">
+    <text>折扣汇</text>
+    <view class="sale-product">
+      <view class="pro-left">
+        <block wx:for="{{imgs}}" wx:for-item="item" wx:for-index="index" wx:key="this">
+          <image  src="{{item}}" data-index="{{index}}"></image>
+        </block>
+      </view>
+      <view class="pro-right" bindtap="goMore">
+        查看更多
+      </view>
+    </view>
+  </view>
+  <view class="list-box">
+    <view class="list-title">美酒推荐</view>
+    <view class="list-wrapper-wine">
+      <winelist winelist="{{productList}}" bind:signCar="addCar"></winelist>
+    </view>
+    <view class="list-more">
+      <more bind:lookDetail="moreFn" passVal="{{winetag}}"></more>
+    </view>
+  </view>
+  <view class="list-box">
+    <view class="list-title">饭店推荐</view>
+    <view class="list-wrapper-hotel">
+      <view class="map">
+        <image src="/img/map.jpg"></image>
+      </view>
+      <view class="addresslist">
+        <view wx:for="{{addresslist}}" wx:key="index" class="address-box" bindtap="goHotelDetail">
+          <text class="title">{{item.title}}</text>
+          <view class="address-detail">
+            <view class="desc">
+              <text class="address">地址:   {{item.address}}</text>
+              <text class="phone">电话:   {{item.phone}}</text>
+              <text class="time">营业时间:    {{item.time}}</text>
+            </view>
+            <view class="map">
+              <text class="iconfont icon-icon-test1"></text>
+              <text>{{item.distance}}Km</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list-more more-hotel">
+      <more bind:lookDetail="moreFn" passVal="{{hoteltag}}"></more>
+    </view>
+  </view>
+  
+</view>

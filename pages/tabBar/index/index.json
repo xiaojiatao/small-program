@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "more": "/component/more/more",
+    "winelist": "/component/wineList/winelist"
+  }
+}

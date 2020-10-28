@@ -1,0 +1,16 @@
+<!--pages/winedetail/winedetail.wxml-->
+<view class="wrapper-winedetail">
+  <detail childdata="{{listdetail}}">
+    <view class="address-box">
+      <view class="address-up">
+        <text class="address">地址:茅台路179号金虹桥商场(近娄山关路)</text>
+        <text>电话: 021-62580760</text>
+        <text>营业时间: 11:00-21:00</text>
+      </view>
+      <view class="address-dw">
+        <text class="iconfont icon-lianxidianhua"></text>
+        <text class="iconfont icon-icon-test1"></text>
+      </view>
+    </view>
+  </detail>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/winelist/winelist.wxml-->
+<view class="wrapper-shopcar">
+  <view class="shoppinglist">
+    <view class="shop-box">
+      <view class="title-shop">您的购物清单:</view>
+      <view class="text-shop">
+        <text>商品数量: 21件</text>
+        <text>总价: 6360.00元</text>
+        <text>使用优惠券: 暂无</text>
+        <text>已优惠: -1240.00元</text>
+        <text>邮费: 免费</text>
+        <text>合计: 5120.00元</text>
+      </view>
+    </view>
+    <!--bg底图 start-->
+    <view class="bg-box">
+      <text class="iconfont icon-gouwuche-01"></text>
+    </view>
+    <!--bg底图 end-->
+  </view>
+  <!--已购产品 start-->
+  <view class="selectedgoods">
+    <view class="car-box">
+      <carlist getlistdata="{{goodslist}}" bind:add="addFn" bind:plus="plusFn">
+        <view wx:for="{{goodslist}}" wx:for-index="index" slot="slot{{index}}" wx:key="key" class="delete-box" data-index="{{index}}" bind:tap="fatherDel">
+          <text class="iconfont icon-guanbi"></text>
+          <text class="font">删除</text>
+        </view>
+      </carlist>
+    </view>
+    <view class="car-btn">
+      <text class="btn-sure" bind:tap="goOrderFn">确认订单</text>
+      <text class="btn-look">再去逛逛</text>
+    </view>
+  </view>
+  <!--已购产品 end-->
+</view>

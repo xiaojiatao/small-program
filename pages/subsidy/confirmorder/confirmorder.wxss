@@ -1,0 +1,91 @@
+/* winelist.wxss */
+.shoppinglist{
+  position:relative;
+}
+.shop-box{
+  padding:20rpx 0 0 40rpx;
+}
+.shop-box .title-shop{
+  color:#222;
+  font-size:36rpx;
+  margin-bottom:20rpx;
+}
+.shop-box .text-shop{
+  padding-left:40rpx;
+  display:grid;
+  color:#555454;
+  font-size:32rpx;
+}
+.shop-box .text-shop>text{
+  line-height:50rpx;
+}
+.shop-box .text-shop>text:nth-last-child(1) {
+  color:#222;
+  font-size:32rpx;
+  border-top:solid 1px #ccc;
+  line-height:60rpx;
+  margin-top:10rpx;
+  width:300rpx;
+}
+
+.shoppinglist .bg-box{
+  border:solid 5px #aaa;
+  width:390rpx;
+  height:390rpx;
+  border-radius:100%;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  right:-60rpx;
+  bottom:0rpx;
+}
+.bg-box .icon-gouwuche-01{
+  font-size:120px;
+  color:#aaa;
+}
+.selectedgoods{
+  padding:0 40rpx;
+  margin-top:50rpx;
+}
+.car-box .delete-box{
+  width:110rpx;
+  height:100%;
+  background:#efefef;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left:20rpx;
+}
+.car-box .delete-box .icon-guanbi{
+  color:#3a3a3a;
+  font-size:35rpx;
+  margin-bottom:6rpx;
+}
+.car-box .delete-box .font{
+  color:#666;
+  font-size:24rpx;
+}
+.car-btn{
+  display:flex;
+  justify-content: center;
+  padding-top:30rpx;
+}
+.car-btn >text{
+  color:#fff;
+  font-size:29rpx;
+  width:154rpx;
+  height:64rpx;
+  display:block;
+  text-align:center;
+  line-height:62rpx;
+}
+.car-btn >text.btn-sure{
+  background:#936d2e;
+  margin-right:16rpx;
+}
+.car-btn >text.btn-look{
+  background:#888;
+}

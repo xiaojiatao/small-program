@@ -1,0 +1,87 @@
+/**carlist.wxss**/
+
+.car-title {
+  color: #222;
+  font-size: 34rpx;
+}
+
+.car-list-box {
+  border-top: solid 4rpx #666;
+  border-bottom: solid 4rpx #666;
+}
+
+.car-row {
+  display: flex;
+  align-items: center;
+  border-bottom:solid 1px #ccc;
+}
+
+.car-row:nth-last-child(1){
+  border-bottom:none;
+}
+
+.row-lf {
+  width: 140rpx;
+  height: 100rpx;
+  flex-shrink: 0;
+  margin-right:20rpx;
+}
+
+.row-lf image {
+  width: 100%;
+  height: 100%;
+}
+
+.row-rg {
+  flex: 1;
+  display: flex;
+}
+
+.slot-lf-box {
+  flex: 1;
+  padding: 2rpx 0;
+}
+
+.slot-rg {
+  width: auto;
+}
+
+.slot-lf-box .name {
+  color: #333;
+  font-size: 28rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.slot-lf-box .system-box {
+  display: flex;
+}
+
+.slot-lf-box .system-box .text-lf {
+  flex: 1;
+  color: #666;
+  font-size: 26rpx;
+  display: grid;
+}
+
+.slot-lf-box .system-box .btn-rg {
+  display: flex;
+}
+
+.slot-lf-box .system-box .btn-rg text {
+  width: 60rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 48rpx;
+  color: #fff;
+}
+
+.slot-lf-box .system-box .btn-rg text.plus {
+  background: #333;
+  margin-right:6rpx;
+}
+
+.slot-lf-box .system-box .btn-rg text.add {
+  background: #936d2e;
+}

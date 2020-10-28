@@ -1,0 +1,5 @@
+<!--component/more.wxml-->
+<view class="wrapper-more" bind:tap="handleTap">
+  <text class="text-more">查看更多</text>
+  <text class="iconfont icon-iconfontjiantou"></text>
+</view>

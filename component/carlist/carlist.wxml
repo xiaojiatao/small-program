@@ -1,0 +1,32 @@
+<!--component/carlist/carlist.wxml-->
+<view class="wrapper-carlist">
+  <text class="car-title">您已选购以下产品</text>
+  <!--list start-->
+  <view class="car-list-box">
+    <view class="car-row" wx:for="{{getlistdata}}" wx:for-index="index" wx:key="this">
+      <view class="row-lf">
+        <image src="{{item.url}}"></image>
+      </view>
+      <view class="row-rg">
+        <view class="slot-lf-box">
+          <view class="name">{{item.name}}</view>
+          <view class="system-box">
+            <view class="text-lf">
+              <text>价格: {{item.price}}</text>
+              <text>购买数量: {{item.number}}</text>
+            </view>
+            <view class="btn-rg">
+              <text class="plus" data-index="{{index}}" bind:tap="plusNum">-</text>
+              <text class="add" data-index="{{index}}" bind:tap="addNum">+</text>
+            </view>
+          </view>
+        </view>
+        <view class="slot-rg">
+          <slot name="slot{{index}}"></slot>
+        </view>
+      </view>
+    </view>
+    <!--for循环 end-->
+  </view>
+  <!--list end-->
+</view>

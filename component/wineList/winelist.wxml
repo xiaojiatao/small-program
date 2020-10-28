@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="list" wx:for="{{winelist}}" wx:for-index="index" wx:key="this">
+  <view class="img-box">
+    <image src="{{item.url}}" bind:tap="godetailFn"></image>
+  </view>
+  <view class="pro-text">
+    <view class="text-lf">
+      <text>{{item.name}}</text>
+      <view class="dw-text">
+        <text class="row">市场价:{{item.price}}</text>
+        <text class="row">优惠价:{{item.sale}}</text>
+      </view>
+    </view>
+    <view class="text-rg">
+      <text class="iconfont icon-gouwuche"  data-index="{{index}}" bind:tap="goCarFn"></text>
+      <text class="iconfont icon-shoucang"></text>
+    </view>
+  </view>
+</view>

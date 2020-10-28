@@ -1,0 +1,26 @@
+<!--pages/winedetail/winedetail.wxml-->
+<view class="wrapper-winedetail">
+  <detail childdata="{{listdetail}}">
+    <view class="wine-box">
+      <view class="wine-up">
+        <view class="row">
+          <text>市场价:860.00</text>
+          <view class="comment">
+            <text>网友评分:</text>
+          </view>
+        </view>
+        <view class="row">
+          <text>优惠价:680.00</text>
+          <view class="buy">
+            <text>购买数量</text>
+          </view>
+        </view>
+        <view class="row"></view>
+      </view>
+      <view class="wine-dw">
+        <text class="iconfont icon-lianxidianhua"></text>
+        <text>联系客服400-807-5199</text>
+      </view>
+    </view>
+  </detail>
+</view>

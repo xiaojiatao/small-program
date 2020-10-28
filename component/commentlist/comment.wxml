@@ -1,0 +1,19 @@
+<!--component/more.wxml-->
+<view class="wrapper-comment">
+  <view class="list" wx:for="{{childcomment}}" wx:key="index" >
+  <view class="comment-lf">
+    <image src="{{item.head}}"></image>
+  </view>
+  <view class="comment-rg">
+    <view class="rg-title">
+      <view class="star">
+        left
+      </view>
+      <text class="time">
+        {{item.time}}
+      </text>
+    </view>
+    <view class="rg-desc">{{item.content}}</view>
+  </view>
+  </view>
+</view>

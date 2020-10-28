@@ -1,0 +1,96 @@
+/* winelist.wxss */
+.wrapper-winelist .banner{
+  width:100%;
+  height:440rpx;
+}
+.wrapper-winelist .banner image{
+  width:100%;
+  height:100%;
+}
+
+.wine-box{
+  padding:0 40rpx;
+}
+.wine-box text.title{
+  width:100%;
+  font-size:28rpx;
+  margin:50rpx 0 30rpx;
+  color:#5c5c5c;
+  display:block;
+  position:relative;
+  text-align:center;
+}
+.wine-box text.title::before{
+  width:160rpx;
+  height:1rpx;
+  content: "";
+  background:#333;
+  position:absolute;
+  left:114rpx;
+  top:20rpx;
+  display:block;
+}
+.wine-box text.title::after{
+  width:160rpx;
+  height:1rpx;
+  content: "";
+  background:#333;
+  position:absolute;
+  right:114rpx;
+  top:20rpx;
+  display:block;
+}
+
+.wine-box{
+  background:#e7e7e7;
+  padding:40rpx 40rpx 30rpx;
+  font-size:28rpx;
+}
+.wine-up .row{
+  display:flex;
+  line-height:46rpx;
+}
+.wine-up{
+  margin-bottom:10rpx;
+}
+.wine-up .row>text{
+  flex:1;
+}
+.wine-dw{
+  text-align:center;
+  color:#666;
+  font-size:34rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wine-dw .iconfont{
+  color:#5f5f5f;
+  font-size:58rpx;
+  margin-right:10rpx;
+}
+
+.address-box{
+  background:#e7e7e7;
+  padding: 40rpx 0;
+  text-align:center;
+}
+.address-box .address-up{
+  display:grid;
+  color:#333;
+  margin-bottom:10rpx;
+}
+.address-box .address-up .address{
+  font-weight:bold;
+}
+.address-box .address-up>text{
+  line-height:46rpx;
+}
+
+.address-box .address-dw{
+  color:#6b6b6b;
+  
+}
+.address-box .address-dw .iconfont{
+  font-size:70rpx;
+}
